@@ -97,8 +97,17 @@ main {
 }
 
 .overview {
-  background-color: #fff;
-  padding: 2rem;
+  /* background-color: rgba(0, 0, 0, 0.568); */
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  backdrop-filter: blur(3px);
+  color: white;
+  padding: 1rem;
   position: absolute;
   max-height: 100%;
   overflow: auto;
